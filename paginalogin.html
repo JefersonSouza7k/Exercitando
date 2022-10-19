@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<style>
+			.container {
+				width: 100vw;
+				height: 100vh;
+				background-color: white;
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+			.box {
+				background-color: midnightblue;
+				width: 300px;
+				height: 300px;
+				border-radius: 20px;
+				border: 5px solid dodgerblue;
+				box-shadow: 0px 0px 50px black;
+				
+			}
+			body {
+				margin: 0px;
+			}
+			.usuario {
+				border-radius: 15px;
+			}
+			.usuario:hover {
+				background-color: gainsboro;
+			}
+			::-webkit-input-placeholder {
+				font-family: times new roman;
+				text-align: center;
+				letter-spacing: 8px;
+			}
+			.senha {
+				border-radius: 15px;
+			}
+			.senha:hover {
+				background-color: gainsboro;
+			}
+			.acesso {
+				border-radius: 15px;
+				transition: transform 3s;
+				font-family: times new roman;
+				font-size: 10px;
+			}
+			.acesso:hover {
+				cursor: pointer;
+				background-color: midnightblue;
+				border-color: black;
+
+			}
+			.login {
+				color: white;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>	
+		<div class="container">
+			<div class="box">
+				<h1 class="login" style="text-align: center; font-family: times new roman;">LOGIN</h1>
+				<form action="" method="POST" style="text-align: center;">
+					<p><input class="usuario" type="text" name="nome" placeholder="USUÁRIO" style="height: 50px; width: 200px;"></p>
+					<p><input class="senha" type="password" name="senha" placeholder="SENHA" style="height: 50px; width: 200px;"></p> 
+					<p><input class="acesso" type="submit" value="LOGIN" name="acessar" style="height: 50px; width: 200px;"></p>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
